@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+header, main {
+    max-width: 1280px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin: 15px;
+}
+
+nav{
+    padding: 30px 80px 20px 0px;
+}
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #b6b6b8;
+    font-weight: 400;
+  }

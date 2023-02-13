@@ -1,0 +1,110 @@
+.enviar {
+    width: 500px;
+    height: 800px;
+    margin: 50px;
+    text-align: left;
+    padding: 30px;
+  }
+
+.container{
+    background-color: #ffe9dc;
+    height: 800px;
+}
+
+h1, p{
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    --text-opacity: 1;
+    color: rgba(43,43,43,var(--text-opacity));
+}
+
+.title{
+    padding: 20px 0px 20px 0px;
+}
+
+
+.message{
+    width: 500px;
+    height: 200px;
+    padding: 16px 12px 16px 12px;
+    border:none;
+}
+
+.email {
+    padding: 16px 12px 16px 12px;
+    border:none;
+    width: 500px;
+}
+
+.input{
+    padding: 5px 10px;
+    background-color:#2b2b2b;
+    height: 45px;
+    width: 110px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+}
+
+.input:hover{
+    border: 1px solid #2b2b2b;
+    background-color: #ffe9dc;
+    color: #2b2b2b;
+}
+
+.lab-email, .lab-mensaje{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+.email,  .message{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 640px){
+    .enviar{
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .message{
+        width: 450px;
+        height: 200px;
+    }
+    
+    .email {
+        width: 450px;
+    }
+}
+
+@media (max-width: 490px){
+    .message{
+        width: 300px;
+        height: 150px;
+    }
+    
+    .email {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px){
+    .enviar{
+        padding: 3px;
+        margin: 3px;
+    }
+
+    .message{
+        width: 200px;
+        height: 150px;
+    }
+    
+    .email {
+        width: 200px;
+    }
+}

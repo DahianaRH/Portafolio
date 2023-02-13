@@ -1,0 +1,241 @@
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.container{
+    margin-left: 48px;
+    padding: 0px 0px 64px 48px;
+}
+
+.name{
+    font-weight: inherit;
+    margin: 0px 0px 60px 128px;
+    margin-left: -4rem;
+    font-size: 54.932px;
+    line-height: 1.2;
+    padding-top: 40px;
+}
+
+.figcaption{
+    --transform-translate-x: 290%;
+    --transform-rotate: 90deg;
+    transform-origin: top left;
+    --transform-translate-y: -480px;
+    --transform-skew-x: 0;
+    --transform-skew-y: 0;
+    --transform-scale-x: 1;
+    --transform-scale-y: 1;
+    transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+}
+
+.figcaption, span, .ocult{
+    color: #285630;
+}
+
+.description{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.break-normal{
+    word-wrap: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+    width:  500px;
+    height: 67.500px;
+    display: flex;
+    justify-content: end;
+    padding-top: 400px;
+    padding-left: 40px;
+    font-size: 22px;
+}
+
+.article{
+    background-color: #ffe9dc;
+    padding: 64px 0 64px 48px;
+}
+
+.principal{
+    box-sizing: border-box;
+    display: flex;
+}
+
+.picture {
+    width: 420px;
+    height: 480px;
+    display: block;
+    background-image: url(foto.jpeg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+}
+
+.figure{
+    width: 450px;
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.text{
+    --text-opacity: 1;
+    color: rgba(43,43,43,var(--text-opacity));
+}
+
+.li {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+.ocult{
+    display: none;
+    font-weight: 700;
+}
+
+@media (min-width: 1020px){
+    .flex {
+        display: flex;
+    }
+
+    a{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1020px){
+    .flex {
+        flex-direction: column;
+    }
+
+    a, .sm{
+        font-size: 22px;
+    }
+
+    .text{
+        font-size: 20px;
+    }
+
+    .name{
+        font-size: 40px;
+    }
+
+    span{
+        font-size: 16px;
+    }
+
+    .break-normal{
+        box-sizing: content-box;
+        padding-top: 40px;
+        padding-left: 5px;
+        margin-bottom: 30px;
+    }
+}
+
+/* Para tablet pequeños */
+@media (max-width: 992px){
+    .article{
+        background-color: #ffe9dc;
+        padding: 40px 0 40px 30px;
+    }
+
+    .picture {
+        width: 325px;
+        height: 350px;
+    }
+
+    .figure{
+        width: 350px;
+        height: 350px;
+    }
+
+    .figcaption{
+        --transform-translate-x: 230%;
+        --transform-translate-y: -350px;
+    }
+}
+
+/* Para portátiles pequeños */
+@media (max-width: 768px){
+    .ocult{
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    span{
+        display: none;
+    }
+
+    .break-normal{
+        width:  400px;
+        height: 67.500px;
+        padding-top: 5px;
+    }
+
+    .picture {
+        width: 275px;
+        height: 300px;
+    }
+
+    .figure{
+        width: 300px;
+        height: 300px;
+    }
+
+    .figcaption{
+        --transform-translate-x: 200%;
+        --transform-translate-y: -300px;
+    }
+}
+
+@media (max-width: 640px){
+    .text{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .break-normal{
+        width:  350px;
+        height: 67.500px;
+        padding-top: 5px;
+    }
+
+    .name{
+        font-size: 35px;
+    }
+
+    .picture {
+        width: 175px;
+        height: 200px;
+    }
+
+    .figure{
+        width: 200px;
+        height: 200px;
+    }
+
+    .figcaption{
+        --transform-translate-x: 133%;
+        --transform-translate-y: -200px;
+    }
+}
+
+/* Para teléfonos pequeños */
+@media (max-width: 320px){
+    .picture {
+        display: none;
+    }
+}
