@@ -30,7 +30,7 @@
 }
 
 .figcaption, span, .ocult{
-    color: #285630;
+    color: var(--secondary-color);
 }
 
 .description{
@@ -52,7 +52,7 @@
 }
 
 .article{
-    background-color: #ffe9dc;
+    background-color: var(--primary-color);
     padding: 64px 0 64px 48px;
 }
 
@@ -148,7 +148,7 @@ a {
 /* Para tablet pequeños */
 @media (max-width: 992px){
     .article{
-        background-color: #ffe9dc;
+        background-color: var(--primary-color);
         padding: 40px 0 40px 30px;
     }
 
